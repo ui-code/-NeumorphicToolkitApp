@@ -1,0 +1,141 @@
+body {
+    background: #f9f9f9;
+}
+
+.app-container {
+    width: 800px;
+    height: 600px;
+    background: #e0e4e7;
+}
+
+.effect {
+    background: #E0E4E7;
+    box-shadow: 5px 5px 13px #b8c7dd,
+        -5px -5px 13px #ffffff;
+}
+
+.effect-inner {
+    background: #E0E4E7;
+    box-shadow: inset 4px 3px 3px 0px #b8c7dd, inset -2px -4px 4px 0px #fff;
+}
+
+.title {
+    color: rgba(236, 126, 218, 0.85);
+    text-shadow: 1px 1px 2px #e0e4e7, 0 0 0 black, 1px 4px 6px #def;
+}
+
+input[type=radio] {
+    width: 28px;
+    height: 28px;
+    border-radius: 50%;
+    appearance: none;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+input[type=radio]:checked {
+    border-radius: 50%;
+    background: #E0E4E7;
+    box-shadow: 4px 4px 8px #b8c7dd,
+        -4px -4px 8px #ffffff;
+}
+
+input[type=radio]:checked::before {
+    content: "";
+    border-radius: 50%;
+    width: 12px;
+    height: 12px;
+    background: #44dbe5;
+}
+
+input[type=checkbox] {
+    display: none;
+}
+
+input[type=text] {
+    background: none;
+}
+
+input[type=text]:focus {
+    outline: none;
+}
+
+.switch {
+    position: relative;
+    cursor: pointer;
+}
+
+.switch-bg {
+    overflow: visible;
+    height: 20px;
+    width: 55px;
+    border-radius: 15px;
+    background: #E0E4E7;
+    box-shadow: inset 7px 2px 2px 0px #c2cad5, inset -3px -2px 2px 0px #f7f7f7;
+}
+
+.switch-indicator {
+    top: -4px;
+    position: absolute;
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+    background: #E0E4E7;
+    box-shadow: 4px 4px 8px #b8c7dd,
+        -4px -4px 8px #ffffff;
+    transform: translateX(0%);
+}
+
+input[type=checkbox]:checked~.switch-indicator {
+    transform: translateX(85%);
+    box-shadow: 4px 4px 8px #b8c7dd,
+        -4px -4px 8px transparent;
+}
+
+input[type=checkbox]:checked~.switch-bg {
+    background: #5685FF;
+    box-shadow: 4px 3px 3px 0px #4273ee inset;
+}
+
+
+.app-color-gray {
+    color: #646464;
+}
+
+.app-color-pink {
+    color: #EC7EDA;
+}
+
+.app-bg-blue-1 {
+    background: #78BFFF;
+}
+
+.app-color-blue-1 {
+    color: #78BFFF;
+}
+
+.app-bg-blue-2 {
+    background: #5685FF;
+}
+
+.app-color-blue-2 {
+    color: #5685FF;
+}
+
+.app-bg-lavender {
+    background: #576EE6;
+}
+
+.app-bg-pink {
+    background: #EC7EDA;
+}
+
+.app-bg-teal {
+    background: #44DBE5;
+}
+
+.app-bg-green {
+    background: #68DEB4;
+}
